@@ -1,0 +1,21 @@
+$color: #999999;
+$bg: #404040;
+
+@mixin flx_cc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+html,
+body {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  @include flx_cc();
+  background: $bg;
+  color: $color;
+}
